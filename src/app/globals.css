@@ -1,25 +1,18 @@
 @import "tailwindcss";
-:root {
-  --bg-color: #ffffff;
-  --text-color: #111111;
-  --border-color: #e5e7eb;
+
+@theme {
+  --color-*: initial;
+  --color-gray-950: #030712;
+  --color-gray-900: #111827;
+  --color-gray-800: #1f2937;
+  --color-gray-700: #374151;
+  --color-gray-600: #4b5563;
+  --color-gray-500: #6b7280;
+  --color-gray-400: #9ca3af;
+  --color-gray-300: #d1d5db;
+  --color-gray-200: #e5e7eb;
+  --color-gray-100: #f3f4f6;
+  --color-gray-50: #f9fafb;
 }
 
-/* Dark mode variables */
-html.dark {
-  --bg-color: #0f172a;
-  --text-color: #f8fafc;
-  --border-color: #1e293b;
-}
-
-/* Apply globally */
-body {
-  background-color: var(--bg-color);
-  color: var(--text-color);
-  transition: background-color 0.3s, color 0.3s;
-}
-
-/* Example utility (optional) */
-.border {
-  border-color: var(--border-color);
-}
+@config "../../tailwind.config.ts";
